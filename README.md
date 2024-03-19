@@ -17,9 +17,9 @@ Host someinternalhost
     сгенерировал для doname_name  158.160.33.140.nip.io
     подключение к серверу через web по адресу 158.160.33.140.nip.io.
 
-4
+
 bastion_IP = 158.160.33.140
 someinternalhost_IP = 10.128.0.26
-5
+
 testapp_IP = 158.160.33.140
 testapp_port = 9292
