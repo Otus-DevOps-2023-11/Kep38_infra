@@ -22,7 +22,7 @@ Host someinternalhost
 bastion_IP = 158.160.33.140
 someinternalhost_IP = 10.128.0.26
 #ДЗ4
-testapp_IP = 178.154.220.195 testapp_port = 9292
+testapp_IP = 51.250.86.183 testapp_port = 9292
 Для автоматического развертывания ВМ в облаке запускаем скрипт create-reddit.sh.
 
 yc compute instance create \
