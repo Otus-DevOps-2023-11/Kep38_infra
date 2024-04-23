@@ -1,6 +1,6 @@
 # Kep38_infra
 Kep38 Infra repository
-#ДЗ №3
+#ДЗ3
 1
 Подключения к someinternalhost в одну команду ssh -J appuser@158.160.33.140 appuser@10.128.0.26
 2
@@ -21,7 +21,7 @@ Host someinternalhost
 
 bastion_IP = 158.160.33.140
 someinternalhost_IP = 10.128.0.26
-#ДЗ №4
+#ДЗ4
 testapp_IP = 178.154.220.195 testapp_port = 9292
 Для автоматического развертывания ВМ в облаке запускаем скрипт create-reddit.sh.
 
