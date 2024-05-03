@@ -1,28 +1,11 @@
-# Kep38_infra
-Kep38 Infra repository
+#HW5
 
-1
-
-Подключения к someinternalhost в одну команду ssh -J appuser@158.160.33.140 appuser@10.128.0.26
-
-2
-
-Для подключениея по алиасу someinternalhost, добавляю конфигурацию в файл ~/.ssh/config:
-
-Host someinternalhost
-  HostName 10.128.0.26
-  User appuser
-  ProxyJump appuser@1158.160.33.140
-
-3
-
-добавление сертификата через nip.io:
-
-    Создал SSL-сертификат с помощью Certbot
-    sudo certbot certonly --standalone -d 158.160.33.140.nip.io
-    сгенерировал для doname_name  158.160.33.140.nip.io
-    подключение к серверу через web по адресу 158.160.33.140.nip.io.
-    
-4
-bastion_IP = 158.160.33.140
-someinternalhost_IP = 10.128.0.26
+    Установил Packer
+    Создан сервисный аккаунт в YC
+    Создан файл ключа для сервисного аккаунта
+    Создан шаблон Packer
+    Установлен билдер yandex - packer plugins install github.com/hashicorp/yandex
+    Внесены параметры в  шаблон, добавлен файл variables.json.example (ориг в .gitignore)
+    Создан bake образ, при развертывании которого приложение сразу начинает работать, дополнительная установка компонентов в   
+    данном случае не требуется
+    Создан скрипт для деплоя ВМ из подгототвленного ранее bake образа
